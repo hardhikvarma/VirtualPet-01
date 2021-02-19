@@ -53,4 +53,11 @@ function writeStock(x){
   database.ref('/').update({
     Food:x
   })
+   
+   function addFoods() {
+    foodS++;
+    database.ref('/').update({
+        Food: foodS
+    })
+}
 }
